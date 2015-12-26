@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-  <meta name="viewport" content="user-scalable=no" />
 	<link rel="shortcut icon" href="img/favicon2.ico" />
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +19,7 @@
 
 	<title>NVR "la radio" - FM 90.5</title>
 </head>
-<body style="overflow: hidden; position: relative;">
+<body>
 <div class="brand">NVR "la radio" - FM 90.5</div>
 
 <div class="vertical-center">

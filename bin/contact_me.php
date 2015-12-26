@@ -14,10 +14,10 @@ $email_address = $_POST['email'];
 $message = $_POST['message'];
 	
 // create email body and send it	
-$to = 'nvr@copesnet.com.ar'; // PUT YOUR EMAIL ADDRESS HERE
+$to = 'contacto@nvrlaradio.com'; // PUT YOUR EMAIL ADDRESS HERE
 $email_subject = "Formulario de contacto NVR:  $name"; // EDIT THE EMAIL SUBJECT LINE HERE
-$email_body = "Recibiste un mensaje de tu formulario de contacto.\n\n"."Detalles:\n\nNombre: $name\n\nEmail: $email_address\n\nMensaje:\n$message";
-$headers = "From: no-responder@nvrlaradio.com.ar\n";
+$email_body = "Recibiste un mensaje de tu formulario de contacto.\n\n"."Nombre: $name\n\nEmail: $email_address\n\nMensaje:\n$message";
+$headers = "From: $email_address\n";
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
 return true;			
